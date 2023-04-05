@@ -1,0 +1,205 @@
+.border-box{
+    -fx-pref-width: 800px;
+    -fx-pref-height: 570px;
+    -fx-alignment: center;
+}
+
+.top{
+    -fx-pref-width: 800px;
+    -fx-pref-height: 60px;
+    -fx-padding: 0 15;
+    -fx-spacing: 10;
+    -fx-background-color: #1E46D4;
+    -fx-alignment: center-left;
+}
+
+.title{
+    -fx-font-weight: bold;
+    -fx-font-size: 26px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.border-box-center{
+    -fx-alignment: top-center;
+}
+
+.border-box-center-livro{
+    -fx-alignment: top-left;
+    -fx-padding: 0 15;
+}
+
+.email-senha-container{
+    -fx-pref-width: 334px;
+    -fx-pref-height: 180px;
+    -fx-spacing: 13;
+}
+
+.email-senha{
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+}
+
+.email-senha-textfild{
+    -fx-pref-height: 34px;
+    -fx-background-color: transparent;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+}
+
+.entrar-container{
+    -fx-pref-height: 49px;
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+.entrar-container-atuLivro{
+    -fx-pref-height: 60px;
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+    -fx-padding: 0 15;
+}
+
+
+.entrar-button{
+    -fx-pref-width: 128px;
+    -fx-pref-height: 27px;
+    -fx-alignment: center;
+    -fx-background-color: #1E46D4;
+    -fx-border-radius: 5;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.atuLivro-button{
+    -fx-pref-width: 100px;
+    -fx-pref-height: 20px;
+    -fx-alignment: center;
+    -fx-background-color: #1E46D4;
+    -fx-border-radius: 5;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.cadastrar-button{
+    -fx-pref-width: 128px;
+    -fx-pref-height: 27px;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+}
+
+.cadCliente-container{
+    -fx-pref-width: 334px;
+    -fx-pref-height: 281px;
+    -fx-padding: 15 0;
+    -fx-spacing: 13;
+}
+
+
+.cadLivro-container{
+    -fx-pref-width: 334px;
+    -fx-pref-height: 250px;
+    -fx-padding: 15 0;
+    -fx-spacing: 13;
+}
+
+.comentario{
+    -fx-pref-height: 80px;
+    -fx-background-color: transparent;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+}
+
+.right{
+    -fx-pref-width: 140px;
+    -fx-alignment: top-center;
+    -fx-padding: 33 0;
+    -fx-spacing: 15;
+}
+
+.cadLivro-button{
+    -fx-pref-width: 128px;
+    -fx-pref-height: 27px;
+    -fx-alignment: center;
+    -fx-background-color: #1E46D4;
+    -fx-border-radius: 5;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.pesquisa{
+    -fx-pref-width: 300px;
+    -fx-pref-height: 28px;
+    -fx-background-color: #7F96E7;
+    -fx-border-radius: 10;  
+}
+
+.sair{
+    -fx-pref-width: 50px;
+    -fx-pref-height: 30px;
+    -fx-background-color: transparent;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.perfil-container{
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-background-color: transparent;
+    -fx-spacing: 10;
+}
+
+.perfil-label{
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.perfil{
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-background-color: transparent;
+}
+
+.border-box-center-principal{
+    -fx-alignment: top-center;
+    -fx-padding: 10;
+}
+
+.pag-lidas{
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+.tv{
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #7F96E7;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.atuLivro-container{
+    -fx-alignment: top-center;
+    -fx-spacing: 20;
+}
+
+
+

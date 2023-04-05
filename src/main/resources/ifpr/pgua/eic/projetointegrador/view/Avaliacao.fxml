@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="800" styleClass="border-box" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.projetointegrador.controllers.TelaAvaliacaoController">
+   <center>
+
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="top" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="title" stylesheets="@../css/style.css" text="Lidos" />
+         </children></HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="border-box-center" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="62.0" prefWidth="800.0" />
+            <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="297.0" prefWidth="670.0" styleClass="cadLivro-container" stylesheets="@../css/style.css">
+               <children>
+                  <TextField fx:id="tfLivro" promptText="Título" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                  <ComboBox fx:id="cbNota" prefHeight="27.0" prefWidth="333.0" promptText="Nota" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                  <TextField fx:id="tfPagina_lidas" promptText="Paginas lidas" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                  <TextField fx:id="tfComentario" alignment="TOP_LEFT" prefHeight="65.0" prefWidth="334.0" promptText="Comentário" styleClass="comentario" stylesheets="@../css/style.css" />
+               </children>
+            </VBox>
+            <HBox maxHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" styleClass="entrar-container" stylesheets="@../css/style.css">
+               <children>
+                  <Button maxHeight="-Infinity" mnemonicParsing="false" onAction="#voltar" prefHeight="6.0" styleClass="entrar-button" stylesheets="@../css/style.css" text="Cancelar" />
+                  <Button maxHeight="-Infinity" mnemonicParsing="false" onAction="#avaliar" prefHeight="6.0" styleClass="entrar-button" stylesheets="@../css/style.css" text="Salvar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+
+</BorderPane>

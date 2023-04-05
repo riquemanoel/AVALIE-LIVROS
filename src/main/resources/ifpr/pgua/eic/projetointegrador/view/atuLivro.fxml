@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="600" prefWidth="800" styleClass="border-box" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.projetointegrador.controllers.TelaAtuLivroController">
+   <center>
+
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="top" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="title" stylesheets="@../css/style.css" text="Lidos" />
+         </children></HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="border-box-center-livro" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="770.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="770.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="pag-lidas" stylesheets="@../css/style.css" text="Livro" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+                  <Pane prefHeight="39.0" prefWidth="246.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="pag-lidas" stylesheets="@../css/style.css" text="Avaliação" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="388.0" prefWidth="770.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="atuLivro-container" stylesheets="@../css/style.css">
+                     <children>
+                        <VBox maxWidth="-Infinity" prefHeight="318.0" prefWidth="670.0" styleClass="email-senha-container" stylesheets="@../css/style.css">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Título" />
+                                    <TextField fx:id="tfTitulo" promptText="Título" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Autor" />
+                                    <TextField fx:id="tfAutor" promptText="Autor" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Número de páginas" />
+                                    <TextField fx:id="tfNumero_paginas_livro" promptText="Número de páginas" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Ano lançamento" />
+                                    <TextField fx:id="tfAno_lancamento" promptText="Ano lançamento" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                                 </children>
+                              </VBox>
+                              <ComboBox fx:id="cbGenero" prefHeight="27.0" prefWidth="333.0" promptText="Genêro" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                              <ComboBox fx:id="cbTag" prefHeight="27.0" prefWidth="333.0" promptText="Status" styleClass="email-senha-textfild" stylesheets="@../css/style.css" />
+                           </children>
+                        </VBox>
+                        <TableView fx:id="tbAvaliacoes" prefHeight="258.0" prefWidth="396.0">
+                          <columns>
+                            <TableColumn fx:id="tbcNota" prefWidth="81.60003662109375" styleClass="tv" text="Nota" />
+                            <TableColumn fx:id="tbcCometario" prefWidth="232.79998779296875" styleClass="tv" text="Comentário" />
+                              <TableColumn fx:id="tbcNumeroPaginasLidas" minWidth="8.79998779296875" prefWidth="79.99993896484375" styleClass="tv" text="Páginas lidas" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" prefHeight="66.0" prefWidth="770.0" styleClass="entrar-container-atuLivro" stylesheets="@../css/style.css">
+                     <children>
+                        <Button maxHeight="-Infinity" mnemonicParsing="false" onAction="#voltar" prefHeight="23.0" styleClass="atuLivro-button" stylesheets="@../css/style.css" text="Cancelar" />
+                        <Button maxHeight="-Infinity" mnemonicParsing="false" onAction="#desativar" prefHeight="23.0" styleClass="atuLivro-button" stylesheets="@../css/style.css" text="Excluir" />
+                        <Button maxHeight="-Infinity" mnemonicParsing="false" onAction="#atualizar" prefHeight="6.0" styleClass="atuLivro-button" stylesheets="@../css/style.css" text="Atualizar" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+
+</BorderPane>
